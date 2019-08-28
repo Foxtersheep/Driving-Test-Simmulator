@@ -19,9 +19,10 @@ void setup() {
   digitalWrite(encoderPin2, HIGH); //turn pullup resistor on
 
   //call updateEncoder() when any high/low changed seen
-  //on interrupt 0 (pin 0), or interrupt 1 (pin 1) 
+  //on interrupt 0 (pin 2), or interrupt 1 (pin 3) 
   attachInterrupt(0, updateEncoder, CHANGE); 
   attachInterrupt(1, updateEncoder, CHANGE);
 
 }
+
 
